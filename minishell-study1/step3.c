@@ -59,6 +59,7 @@ int main (void)
 
     return(0);
 }
+// compile with: cc step3.c -lreadline -o minishell
 
 /*Explanation:
 

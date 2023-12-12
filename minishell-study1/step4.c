@@ -73,9 +73,9 @@ int main(void)
     }
     return (0);
 }
+// compile with: cc step4.c -lreadline -o minishell
 
-/*
-============### Main Execution Flow ###============
+/*============### Main Execution Flow ###============
 
 1. User Prompt and Input:
    - The program starts by entering an infinite loop (`while (1)`) to continuously prompt the user for commands.
