@@ -95,7 +95,11 @@ Step-By-Step Approach
 
 
 
-######## External Functions: ########
+====## Libft authorized ##====
+- functions in libft function library.
+
+
+==######## External Functions: ########==
 
 ==Readline and History Handling==
   - `readline`: Use this function to read input from the user, providing line editing capabilities.
@@ -139,5 +143,3 @@ Step-By-Step Approach
 ==Terminfo Database==
   - `tgetent`, `tgetflag`, `tgetnum`, `tgetstr`, `tgoto`, `tputs`: Terminfo database functions for terminal capabilities.
 
-==Libft==
-- functions in libft library.
