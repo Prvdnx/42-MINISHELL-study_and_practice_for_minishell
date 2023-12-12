@@ -1,0 +1,98 @@
+
+Step-by-step approach:
+
+
+### Step 1: Project Setup
+
+1. **Create Project Folder:**
+   - Set up a new project folder for your minishell.
+
+2. **Initialize Git:**
+   - Initialize a Git repository for version control.
+
+### Step 2: Basic Shell Structure
+
+3. **Create Main Shell File:**
+   - Write a simple C program with a loop to display a prompt and read user input.
+
+4. **Read User Input:**
+   - Use `readline` to read user input.
+
+### Step 3: External Functions
+
+5. **Implement External Functions:**
+   - Implement basic versions of external functions needed for the project (e.g., `fork`, `execve`, `wait`, etc.).
+
+### Step 4: Command Execution
+
+6. **Search and Launch Executable:**
+   - Implement logic to search and execute the correct executable based on user input.
+
+7. **Process Creation:**
+   - Use `fork` to create a new process.
+
+8. **Execute Command:**
+   - In the child process, use `execve` to execute the command.
+
+9. **Wait for Child Process:**
+   - In the parent process, use `wait` to wait for the child process to complete.
+
+### Step 5: Quote Handling
+
+10. **Handle Single and Double Quotes:**
+    - Implement logic to handle single and double quotes in user input.
+
+### Step 6: Redirections
+
+11. **Implement Redirections:**
+    - Implement logic to handle input and output redirection (<, >, <<, >>).
+
+### Step 7: Pipes
+
+12. **Implement Pipes:**
+    - Implement logic to handle pipes (|).
+
+### Step 8: Environment Variables
+
+13. **Handle Environment Variables:**
+    - Implement logic to expand environment variables (e.g., $PATH) in user input.
+
+### Step 9: Exit Status and Signals
+
+14. **Manage Exit Status:**
+    - Implement logic to get the exit status of the most recently executed foreground pipeline ($?).
+
+15. **Handle Signals:**
+    - Implement signal handlers for ctrl-C, ctrl-D, and ctrl-\.
+
+### Step 10: Builtins
+
+16. **Implement Builtins:**
+    - Create functions for each builtin command (echo, cd, pwd, export, unset, env, exit).
+
+### Step 11: Memory Management
+
+17. **Memory Allocation and Deallocation:**
+    - Ensure proper memory allocation and deallocation in your code. Avoid memory leaks.
+
+### Step 12: Testing
+
+18. **Create Test Programs:**
+    - Develop test programs to verify the correctness of your shell. Test various scenarios, including edge cases and error conditions.
+
+### Step 13: Documentation
+
+19. **Code Comments:**
+    - Add comments to explain the logic and design choices in your code.
+
+### Step 14: Norm Compliance
+
+20. **Check Norm Rules:**
+    - Regularly run norm checks to identify and fix any norm errors.
+
+### Step 15: Submission
+
+21. **Submit to Git Repository:**
+    - Commit your changes and push your code to the assigned Git repository.
+
+By breaking down the project into these steps, you can focus on implementing and testing one feature at a time. Remember to refer to the project requirements and test your shell thoroughly as you progress through each step. Good luck with your minishell project!
