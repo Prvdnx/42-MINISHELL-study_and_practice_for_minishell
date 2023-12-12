@@ -20,8 +20,10 @@ void    execute_command(char *command)
     if(pid == 0)
     {
         if(execve(command, NULL, NULL) == -1)
+        {
         perror("execve");
         exit(EXIT_FAILURE);
+        }
     }
     else
     {
