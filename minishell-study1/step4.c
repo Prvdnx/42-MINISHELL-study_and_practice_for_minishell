@@ -75,7 +75,7 @@ int main(void)
 }
 
 /*
-===### Main Execution Flow ###===
+============### Main Execution Flow ###============
 
 1. User Prompt and Input:
    - The program starts by entering an infinite loop (`while (1)`) to continuously prompt the user for commands.
@@ -147,7 +147,8 @@ int main(void)
         free(input);
         free(args);
 
-===### `execute_command` Function ###===
+
+============### `execute_command` Function ###============
 
 1. Forking a New Process:
    - `fork` is used to create a new process.
