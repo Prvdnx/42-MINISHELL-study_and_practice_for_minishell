@@ -1,6 +1,5 @@
 
-
-Step-by-step approach
+Step-By-Step Approach
 
 
 ### Step 1: Project Setup
