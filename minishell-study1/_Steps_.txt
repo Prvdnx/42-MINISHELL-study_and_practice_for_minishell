@@ -1,0 +1,143 @@
+
+Step-by-step approach
+
+
+### Step 1: Project Setup
+
+    Create Project Folder:
+    - Set up a new project folder for your minishell.
+
+### Step 2: Basic Shell Structure
+
+    Create Main Shell File:
+    - Write a simple C program with a loop to display a prompt and read user input.
+
+    Read User Input:
+   - Use `readline` to read user input.
+
+### Step 3: External Functions
+
+    Implement External Functions:
+    - Implement basic versions of external functions needed for the project (e.g., `fork`, `execve`, `wait`, etc.).
+
+### Step 4: Command Execution
+
+    Search and Launch Executable:
+    - Implement logic to search and execute the correct executable based on user input.
+
+    Process Creation:
+    - Use `fork` to create a new process.
+
+    Execute Command:
+   - In the child process, use `execve` to execute the command.
+
+    Wait for Child Process:
+   - In the parent process, use `wait` to wait for the child process to complete.
+
+### Step 5: Quote Handling
+
+    Handle Single and Double Quotes:
+    - Implement logic to handle single and double quotes in user input.
+
+### Step 6: Redirections
+
+    Implement Redirections:
+    - Implement logic to handle input and output redirection (<, >, <<, >>).
+
+### Step 7: Pipes
+
+    Implement Pipes:
+    - Implement logic to handle pipes (|).
+
+### Step 8: Environment Variables
+
+    Handle Environment Variables:
+    - Implement logic to expand environment variables (e.g., $PATH) in user input.
+
+### Step 9: Exit Status and Signals
+
+    Manage Exit Status:
+    - Implement logic to get the exit status of the most recently executed foreground pipeline ($?).
+
+    Handle Signals:
+    - Implement signal handlers for ctrl-C, ctrl-D, and ctrl-\.
+
+### Step 10: Builtins
+
+    Implement Builtins:
+    - Create functions for each builtin command (echo, cd, pwd, export, unset, env, exit).
+
+### Step 11: Memory Management
+
+    Memory Allocation and Deallocation:
+    - Ensure proper memory allocation and deallocation in your code. Avoid memory leaks.
+
+### Step 12: Testing
+
+    Create Test Programs:
+    - Develop test programs to verify the correctness of your shell. Test various scenarios, including edge cases and error conditions.
+
+### Step 13: Documentation
+
+    Code Comments:
+    - Add comments to explain the logic and design choices in your code.
+
+### Step 14: Norm Compliance
+
+    Check Norm Rules:
+    - Regularly run norm checks to identify and fix any norm errors.
+
+### Step 15: Submission
+
+    Submit to Git Repository:
+    - Commit your changes and push your code to the assigned Git repository.
+
+
+
+
+######## External Functions: ########
+
+==Readline and History Handling==
+  - `readline`: Use this function to read input from the user, providing line editing capabilities.
+  - `rl_clear_history`, `rl_on_new_line`, `rl_replace_line`, `rl_redisplay`: Functions for readline and history management.
+
+==History Management==
+  - `add_history`: Add a line to the command history.
+
+==Standard I/O and Memory Management==
+  - `printf`, `malloc`, `free`, `write`: Standard functions for output, memory allocation, and deallocation.
+
+==File Operations==
+  - `access`, `open`, `read`, `close`, `unlink`: File-related operations.
+
+==Process and Signal Handling==
+  - `fork`, `wait`, `waitpid`, `wait3`, `wait4`: Process creation and wait functions.
+  - `signal`, `sigaction`, `sigemptyset`, `sigaddset`, `kill`, `exit`: Signal handling.
+
+==Directory Operations==
+  - `getcwd`, `chdir`, `opendir`, `readdir`, `closedir`: Directory-related operations.
+  - `stat`, `lstat`, `fstat`: File status operations.
+
+==File Descriptor Operations==
+  - `dup`, `dup2`, `pipe`: File descriptor operations.
+
+==Process Execution==
+  - `execve`: Execute a program.
+
+==Error Handling==
+  - `strerror`, `perror`: Error handling functions.
+
+==Terminal Operations==
+  - `isatty`, `ttyname`, `ttyslot`, `ioctl`: Terminal-related operations.
+
+==Environment and Configuration==
+  - `getenv`: Get the value of an environment variable.
+
+==Terminal Control Operations==
+  - `tcsetattr`, `tcgetattr`: Terminal control operations.
+
+==Terminfo Database==
+  - `tgetent`, `tgetflag`, `tgetnum`, `tgetstr`, `tgoto`, `tputs`: Terminfo database functions for terminal capabilities.
+
+==Libft==
+- functions in libft library.
