@@ -22,7 +22,7 @@ int main(void)
     free(input);
     return (0);
 }
-// compile with: cc main1.c -lreadline -o minishell
+// compile with: cc step1.c -lreadline -o minishell
 
 /* EXPLANATION
 
