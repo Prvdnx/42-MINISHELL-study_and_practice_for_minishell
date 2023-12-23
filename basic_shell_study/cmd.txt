@@ -1,0 +1,9 @@
+
+- cd /  :  Goto root of file system  (after execution, type ls to see files present)
+- cd bin  :  In file system, Goto Binary directory "bin"  (most used program and binary
+             executables are located within)
+- echo $$  :  Get Process Id (pid) of the current running program/process  (current instance
+              if your shell program; anytime a new instance, a new pid is created)
+- ps  :  List, report the current running process in the terminal (there's ps -eaf,
+         ps -eaf | grep -e "fork", etc check man pages)
+- 
