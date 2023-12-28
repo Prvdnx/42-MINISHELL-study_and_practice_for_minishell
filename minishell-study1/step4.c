@@ -243,5 +243,5 @@ int main(void)
 
 
 This minishell program now allows users to enter commands with arguments, executes them, and
-continuously prompts for new commands until the user decides to exit. It's a basic structure
-that can be extended to handle more complex features as required by the minishell project requirements.*/
+continuously prompts for new commands until the user decides to exit. It's a basic structure that
+can be extended to handle more complex features as required by the minishell project requirements.*/
