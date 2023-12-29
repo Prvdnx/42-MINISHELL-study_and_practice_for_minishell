@@ -4,49 +4,49 @@
 #include <stdio.h>
 
 ////// 1 //////
-int main()
-{
-    char *argv[] = {"/bin/ls", "-l", NULL};
+// int main()
+// {
+//     char *argv[] = {"/bin/ls", "-l", NULL};
 
-    int value = execve(argv[0], argv, NULL);
+//     int value = execve(argv[0], argv, NULL);
 
-    if(value == -1)
-        perror("Error");
+//     if(value == -1)
+//         perror("Error");
 
-    printf("Done with execve!");
+//     printf("Done with execve!");
 
-    return (0);
-}
+//     return (0);
+// }
 
 
 
 ////// 2 //////
-// #include <sys/types.h>
-// #include <sys/wait.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
-// int main()
-// {
-//     pid_t pid;
+int main()
+{
+    pid_t pid;
 
-//     char *argv[] = {"/bin/ls", "-l", NULL};
+    char *argv[] = {"/bin/ls", "-l", NULL};
 
-//     pid = fork();
+    pid = fork();
 
-//     if (pid == -1)
-//         return (-1);
+    if (pid == -1)
+        return (-1);
 
-//     if (pid == 0)
-//     {
-//         int value = execve(argv[0], argv, NULL);
+    if (pid == 0)
+    {
+        int value = execve(argv[0], argv, NULL);
 
-//         if(value == -1)
-//             perror("Error");
-//     }
-//     else
-//     {
-//         wait(NULL);
-//         printf("Done with execve!");
-//     }
-//     return (0);
-// }
+        if(value == -1)
+            perror("Error");
+    }
+    else
+    {
+        wait(NULL);
+        printf("\nDone with execve!\n");
+    }
+    return (0);
+}
 
