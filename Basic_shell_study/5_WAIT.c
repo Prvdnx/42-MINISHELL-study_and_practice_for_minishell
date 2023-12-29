@@ -6,35 +6,35 @@
 #include <stdlib.h>
 
 /////// 1 /////// wait
-/*int main(void)
-{
-    pid_t pid;
+// int main(void)
+// {
+//     pid_t pid;
 
-    // Before fork is called
+//     // Before fork is called
 
-    // Call fork -> Child process is created
-    pid = fork();
+//     // Call fork -> Child process is created
+//     pid = fork();
 
-    if (pid == -1)
-    {
-        perror("Unsucessful\n");
-        return 1;
-    }
+//     if (pid == -1)
+//     {
+//         perror("Unsucessful\n");
+//         return 1;
+//     }
 
-    // In child process
-    if (pid == 0)
-    {
-        printf("I am in the child process\n");
-    }
-    // In parent process
-    else
-    {
-        sleep(30);
-        printf("The is the parent process\n");
-    }
+//     // In child process
+//     if (pid == 0)
+//     {
+//         printf("I am in the child process\n");
+//     }
+//     // In parent process
+//     else
+//     {
+//         sleep(30);
+//         printf("The is the parent process\n");
+//     }
 
-    return (0);
-}*/
+//     return (0);
+// }
 
 
 ////// 2 /////// wait

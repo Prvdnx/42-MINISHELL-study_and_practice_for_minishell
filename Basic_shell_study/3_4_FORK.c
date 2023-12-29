@@ -5,52 +5,52 @@
 #include <stdio.h>
 
 /////// 1 /////// fork1
-/*int main(void)
-{
-    pid_t pid;
+// int main(void)
+// {
+//     pid_t pid;
 
-    printf("Before fork, I was one\n");
+//     printf("Before fork, I was one\n");
 
-    pid = fork();
+//     pid = fork();
 
-    if (pid == -1)
-    {
-        perror("Unsucessful\n");
-        return 1;
-    }
+//     if (pid == -1)
+//     {
+//         perror("Unsucessful\n");
+//         return 1;
+//     }
 
-    printf("After fork, I became two\n");
+//     printf("After fork, I became two\n");
 
-    return (0);
-}
+//     return (0);
+// }
 
 
 /////// 2 /////// fork2
-int main(void)
-{
-    pid_t pid;
+// int main(void)
+// {
+//     pid_t pid;
 
-    // Before fork is called
+//     // Before fork is called
 
-    // Call fork
-    pid = fork();
+//     // Call fork
+//     pid = fork();
 
-    if (pid == -1)
-    {
-        perror("Unsucessful\n");
-        return 1;
-    }
+//     if (pid == -1)
+//     {
+//         perror("Unsucessful\n");
+//         return 1;
+//     }
 
-    if (pid == 0)
-    {
-        sleep(5);
-        printf("I am in the child\n");
-    }
-    else
-        printf("I am the parent\n");
+//     if (pid == 0)
+//     {
+//         sleep(5);
+//         printf("I am in the child\n");
+//     }
+//     else
+//         printf("I am the parent\n");
 
-    return (0);
-}*/
+//     return (0);
+// }
 
 
 /////// 3 /////// fork3
@@ -68,7 +68,7 @@ int main(void)
     {
         perror("Unsucessful\n");
         return 1;
-    }
+    } 
 
     if (pid == 0)
     {
